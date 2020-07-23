@@ -18,7 +18,8 @@ public class DoorTrigger : MonoBehaviour
             if (!isOpened)
             {
                 isOpened = true;
-                door.transform.position += new Vector3(0, 25, 0);
+                //door.transform.position += new Vector3(0, 25, 0);
+                Destroy(door);
             }
 
 

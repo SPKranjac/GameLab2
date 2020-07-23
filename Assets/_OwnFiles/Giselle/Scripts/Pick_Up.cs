@@ -9,6 +9,7 @@ public class Pick_Up : MonoBehaviour
     {
         Cube = GetComponent<Rigidbody>(); 
     }
+
     private void OnMouseDown()
     {
         Cube.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
@@ -27,5 +28,6 @@ public class Pick_Up : MonoBehaviour
         GetComponent<Rigidbody>().useGravity = true;
         Cube.constraints = RigidbodyConstraints.None;
     }
+
 
 }

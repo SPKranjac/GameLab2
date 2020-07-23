@@ -21,8 +21,17 @@ public class FallingObjects : MonoBehaviour
             Debug.Log(" LOOK OUT!! ");
             //BlockDestroy();
             Debug.Log(" activating destroy box ");
-           
-        }          
+
+        }
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+         if (collider.gameObject.tag == "Pit")
+        {
+            Debug.Log(" Bridge Collapsed");
+            Destroy(block);  
+        }
 
     }
 

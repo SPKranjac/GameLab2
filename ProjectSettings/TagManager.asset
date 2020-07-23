@@ -12,6 +12,7 @@ TagManager:
   - Key
   - Item_Held
   - Ball
+  - Pit
   layers:
   - Default
   - TransparentFX
