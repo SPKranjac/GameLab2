@@ -11,6 +11,7 @@ public class Pick_Up : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        Cube.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         Cube.constraints = RigidbodyConstraints.FreezePosition;
         GetComponent<Rigidbody>().useGravity = false;
         this.transform.position = onHand.transform.position;
@@ -20,6 +21,7 @@ public class Pick_Up : MonoBehaviour
 
     private void OnMouseUp()
     {
+        Cube.transform.localScale = new Vector3(1f, 1f, 1f);
         Cube.constraints = RigidbodyConstraints.None;
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;

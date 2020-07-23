@@ -22,6 +22,12 @@ public class PlayerLook : MonoBehaviour
     //    Cursor.lockState = CursorLockMode.Locked;
     //}
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+
     private void Update()
     {
         CameraRotation();
