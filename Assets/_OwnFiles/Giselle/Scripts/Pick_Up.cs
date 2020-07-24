@@ -22,7 +22,7 @@ public class Pick_Up : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Cube.transform.localScale = new Vector3(1f, 1f, 1f);
+        Cube.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
         Cube.constraints = RigidbodyConstraints.None;
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
